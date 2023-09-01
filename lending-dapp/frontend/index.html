@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Lending DApp</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <h1>Lending DApp</h1>
+
+  <!-- Connect to MetaMask -->
+  <div id="connectSection">
+    <h2>Connect to MetaMask</h2>
+    <button id="connectButton">Connect to MetaMask</button>
+  </div>
+
+  <!-- Contract Balance -->
+  <div id="contractBalance" style="display: none;">
+    <h2>Contract Balance</h2>
+    <p id="balance">Loading...</p>
+  </div>
+
+  <!-- Form for lending -->
+  <div id="lendSection" style="display: none;">
+    <h2>Lend Funds</h2>
+    <label for="lendAmount">Amount to Lend (ETH):</label>
+    <input type="number" id="lendAmount">
+    <button id="lendButton">Lend</button>
+  </div>
+
+  <!-- Form for borrowing -->
+  <div id="borrowSection" style="display: none;">
+    <h2>Borrow Funds</h2>
+    <label for="borrowAmount">Amount to Borrow (ETH):</label>
+    <input type="number" id="borrowAmount">
+    <label for="collateral">Collateral (ETH):</label>
+    <input type="number" id="collateral">
+    <button id="borrowButton">Borrow</button>
+  </div>
+
+  <!-- Form for repaying -->
+  <div id="repaySection" style="display: none;">
+    <h2>Repay Loan</h2>
+    <label for="repayAmount">Repayment Amount (ETH):</label>
+    <input type="number" id="repayAmount">
+    <button id="repayButton">Repay</button>
+  </div>
+
+  <!-- Form for withdrawing lender balance -->
+  <div id="withdrawSection" style="display: none;">
+    <h2>Withdraw Lender Balance</h2>
+    <button id="withdrawButton">Withdraw</button>
+  </div>
+
+  <!-- Output -->
+  <div id="output"></div>
+
+  <script src="app.js"></script>
+</body>
+
+</html>

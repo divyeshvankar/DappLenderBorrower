@@ -1,0 +1,44 @@
+# Ignore Node.js dependencies
+node_modules/
+
+# Ignore build artifacts
+build/
+dist/
+out/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnp.js
+*.pnp.js
+*.pnp.cjs
+*.pnp.mjs
+.pnp.*
+*.bak
+
+# Ignore local environment variables
+.env*
+
+# Ignore Web3.js wallet files (if any)
+*.key
+*.json
+
+# Ignore macOS system files
+.DS_Store
+
+# Ignore Visual Studio Code settings
+.vscode/
+
+# Ignore package manager lock files
+package-lock.json
+yarn.lock
+
+# Ignore any sensitive information (e.g., API keys, credentials)
+config.js
+config.json
+
+# Ignore production files
+/public/
+/dist/
+/build
+lending-dapp/.env
